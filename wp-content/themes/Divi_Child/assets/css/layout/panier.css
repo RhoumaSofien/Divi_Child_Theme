@@ -105,7 +105,7 @@ td.product-name a {
 
 td.product-name>a {
     font-size: 17px;
-    color: #52c4ca;
+    color: var(--clr-accent);
     font-weight: bold;
     text-transform: initial;
 }
@@ -187,7 +187,7 @@ select {
 }
 
 #main-content:not(.et-fb-root-ancestor.et-fb-iframe-ancestor) #validation-panier h3#order_review_heading {
-    background: #52c4ca;
+    background: var(--clr-accent);
 }
 
 #validation-panier table:not(.variations) {
@@ -195,7 +195,7 @@ select {
 }
 
 #validation-panier table:not(.variations) thead th {
-    color: #52c4ca;
+    color: var(--clr-accent);
 }
 
 #validation-panier .woocommerce-checkout #payment {
@@ -342,7 +342,7 @@ input#coupon_code::placeholder {
 }
 
 a.shipping-calculator-button {
-    color: #52c4ca;
+    color: var(--clr-accent);
     position: relative;
     padding: 10px;
     padding-left: 0;
@@ -530,7 +530,7 @@ body:not(.et-fb-root-ancestor) #ship-to-different-address input[type='checkbox']
 }
 
 body:not(.et-fb-root-ancestor, .woocommerce) .woocommerce-shipping-fields #ship-to-different-address input[type='checkbox']:checked::after {
-    color: #52c4ca;
+    color: var(--clr-accent);
 }
 
 body:not(.et-fb-root-ancestor, .woocommerce) .woocommerce-shipping-fields #ship-to-different-address input[type='checkbox']::after {

@@ -192,7 +192,7 @@ header.woocommerce-Address-title.title {
 */
 
 header.woocommerce-Address-title.title h3 {
-    color: #52c4ca;
+    color: var(--clr-accent);
     font-family: 'Quicksand';
     font-weight: 600;
 }
@@ -221,7 +221,7 @@ div#customer_login .u-column1.col-1 {
 }
 
 div#customer_login .u-column2.col-2 {
-    background: #52c4ca;
+    background: var(--clr-accent);
     padding: 40px;
     font-size: 14px;
     font-weight: 300;
@@ -419,7 +419,7 @@ body:not(.et-fb-root-ancestor).page-id-275 input[type='checkbox']::after {
 
 body:not(.et-fb-root-ancestor).page-id-275 input[type='checkbox']:checked::after {
     background: #ffffff;
-    color: #52c4ca;
+    color: var(--clr-accent);
 }
 
 .page-id-275 .u-columns.col2-set#customer_login>div {
