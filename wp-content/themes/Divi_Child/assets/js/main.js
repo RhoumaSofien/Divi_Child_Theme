@@ -134,7 +134,6 @@ jQuery(document).ajaxComplete(function(event, request, settings) {
     }
 });
 
-
 jQuery(window).resize(function($) {
     if (!jQuery('iframe.et-core-frame', window.parent.document).length) {}
 });
