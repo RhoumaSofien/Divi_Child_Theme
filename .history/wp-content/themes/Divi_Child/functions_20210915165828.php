@@ -12,18 +12,18 @@ function divi_child_load_parent_css() {
 // Add Custom CSS Files
 function my_enqueue_front_scripts(){  
     // Main JS
-    wp_enqueue_script('main-js', get_stylesheet_directory_uri().'/assets/js/main.js', array('jquery'), '0', true);
+    wp_enqueue_script('main-js', get_stylesheet_directory_uri().'/js/main.js', array('jquery'), '0', true);
     // Global CHECKBOX & RADIO BUTTONS 
-    wp_enqueue_style( 'mep', get_stylesheet_directory_uri() . '/assets/css/mep.css');
+    wp_enqueue_style( 'mep', get_stylesheet_directory_uri() . '/css/mep.css');
     // WOOCOMMERCE
-    wp_enqueue_style( 'mon-compte', get_stylesheet_directory_uri() . '/assets/css/layout/mon-compte.css');
-    wp_enqueue_style( 'panier', get_stylesheet_directory_uri() . '/assets/css/layout/panier.css');
-    wp_enqueue_style( 'wishlist', get_stylesheet_directory_uri() . '/assets/css/layout/wishlist.css');
-    wp_enqueue_style( 'boutique', get_stylesheet_directory_uri() . '/assets/css/layout/boutique.css');
+    wp_enqueue_style( 'mon-compte', get_stylesheet_directory_uri() . '/css/woocommerce/mon-compte.css');
+    wp_enqueue_style( 'panier', get_stylesheet_directory_uri() . '/css/woocommerce/panier.css');
+    wp_enqueue_style( 'wishlist', get_stylesheet_directory_uri() . '/css/woocommerce/wishlist.css');
+    wp_enqueue_style( 'boutique', get_stylesheet_directory_uri() . '/css/woocommerce/boutique.css');
     // Owl Carousel
-    wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css');
-    wp_enqueue_style( 'owl-theme-default', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css');
-    wp_enqueue_script('owl-carousel', get_stylesheet_directory_uri().'/assets/js/owl.carousel.min.js', array('jquery'), '0', true);
+    wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() . '/css/owl.carousel.min.css');
+    wp_enqueue_style( 'owl-theme-default', get_stylesheet_directory_uri() . '/css/owl.theme.default.min.css');
+    wp_enqueue_script('owl-carousel', get_stylesheet_directory_uri().'/js/owl.carousel.min.js', array('jquery'), '0', true);
 }
 
 add_action('wp_enqueue_scripts', 'my_enqueue_front_scripts');

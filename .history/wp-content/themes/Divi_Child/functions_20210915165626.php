@@ -9,24 +9,38 @@ function divi_child_load_parent_css() {
 	wp_enqueue_style( 'divi-parent-style', get_template_directory_uri() . '/style.css', false, '' );
 }
 
-// Add Custom CSS Files
-function my_enqueue_front_scripts(){  
-    // Main JS
-    wp_enqueue_script('main-js', get_stylesheet_directory_uri().'/assets/js/main.js', array('jquery'), '0', true);
+function my_enqueue_front_scripts(){
+    // Donia_Code_Temporary
+    wp_enqueue_style( 'd_style', get_stylesheet_directory_uri() . '/css/d_style.css');
+    wp_enqueue_script('d_code', get_stylesheet_directory_uri().'/js/d_code.js', array('jquery'), '0', true);
     // Global CHECKBOX & RADIO BUTTONS 
-    wp_enqueue_style( 'mep', get_stylesheet_directory_uri() . '/assets/css/mep.css');
+    wp_enqueue_style( 'global_checkbox_radio', get_stylesheet_directory_uri() . '/css/glob_checkbox_radio.css');
     // WOOCOMMERCE
-    wp_enqueue_style( 'mon-compte', get_stylesheet_directory_uri() . '/assets/css/layout/mon-compte.css');
-    wp_enqueue_style( 'panier', get_stylesheet_directory_uri() . '/assets/css/layout/panier.css');
-    wp_enqueue_style( 'wishlist', get_stylesheet_directory_uri() . '/assets/css/layout/wishlist.css');
-    wp_enqueue_style( 'boutique', get_stylesheet_directory_uri() . '/assets/css/layout/boutique.css');
+    wp_enqueue_style( 'mon-compte', get_stylesheet_directory_uri() . '/css/woocommerce/mon-compte.css');
+    wp_enqueue_style( 'panier', get_stylesheet_directory_uri() . '/css/woocommerce/panier.css');
+    wp_enqueue_style( 'wishlist', get_stylesheet_directory_uri() . '/css/woocommerce/wishlist.css');
+    wp_enqueue_style( 'boutique', get_stylesheet_directory_uri() . '/css/woocommerce/boutique.css');
+    // Main JS
+    wp_enqueue_script('main', get_stylesheet_directory_uri().'/js/main.js', array('jquery'), '0', true);
+    // date-Filter JS
+    wp_enqueue_script('date-filter', get_stylesheet_directory_uri().'/js/date-filter.js', array('jquery'), '0', true);
+    // Main JS
+    wp_enqueue_script('quizz', get_stylesheet_directory_uri().'/js/quizz.js', array('jquery'), '0', true);
+    wp_enqueue_style( 'quizz', get_stylesheet_directory_uri() . '/css/quizz.css');
     // Owl Carousel
-    wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css');
-    wp_enqueue_style( 'owl-theme-default', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css');
-    wp_enqueue_script('owl-carousel', get_stylesheet_directory_uri().'/assets/js/owl.carousel.min.js', array('jquery'), '0', true);
+    wp_enqueue_style( 'owl-carousel', get_stylesheet_directory_uri() . '/css/owl.carousel.min.css');
+    wp_enqueue_style( 'owl-theme-default', get_stylesheet_directory_uri() . '/css/owl.theme.default.min.css');
+    wp_enqueue_script('owl-carousel', get_stylesheet_directory_uri().'/js/owl.carousel.min.js', array('jquery'), '0', true);
+    //fancybox
+    wp_enqueue_script('fancybox', get_stylesheet_directory_uri().'/js/fancybox.js', array('jquery'), '', true);
+    wp_enqueue_style( 'fancyboxcss', get_stylesheet_directory_uri() . '/css/jquery.fancybox.css' );
+    // style detail produit
+    wp_enqueue_style( 'detailproduit', get_stylesheet_directory_uri() . '/css/detailproduit.css' ); 
 }
 
 add_action('wp_enqueue_scripts', 'my_enqueue_front_scripts');
+
+//My_custom_fonts
 
 // Add Counter 
 function iconic_cart_count_fragments( $fragments ) {
@@ -69,7 +83,7 @@ return $size;
 add_filter( 'single_product_archive_thumbnail_size', 'wpse_287488_product_thumbnail_size' );
 */
 
-// Disable responsive wishlist view
+/* Disable responsive wishlist view */
 add_filter( 'yith_wcwl_is_wishlist_responsive', '__return_false' );
 
 // hide divi den pro 
