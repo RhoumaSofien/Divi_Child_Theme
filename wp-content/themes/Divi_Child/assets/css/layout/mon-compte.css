@@ -385,7 +385,7 @@ div#sswcmaat-Moyens\%20de\%20paiement p.woocommerce-Message.woocommerce-Message-
 div#sswcmaat-Moyens\%20de\%20paiement a.button:hover {
     letter-spacing: 0!important;
     border-radius: 5px!important;
-    background: #26b2b8!important;
+    background: var(--clr-accent)!important;
     color: #fff!important;
     border: 1px solid transparent!important;
     border-left: none!important;
@@ -395,7 +395,7 @@ div#sswcmaat-Moyens\%20de\%20paiement a.button:hover {
 
 div#sswcmaat-Moyens\%20de\%20paiement a.button {
     background: transparent;
-    border: 1px solid #26b2b8;
+    border: 1px solid var(--clr-accent);
     border-left: none!important;
     border-right: none!important;
 }

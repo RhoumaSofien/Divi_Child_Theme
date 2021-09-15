@@ -5,9 +5,9 @@ Description: Divi Child Theme
 Author: SR
 Author URI: https://divireadythemes.com/
 Template: Divi
-Version: Updated for Divi 3+
+Version: Divi 3+
 */
 
 :root {
-    --color-accent: red;
+    --clr-accent: red;
 }

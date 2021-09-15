@@ -163,7 +163,7 @@ a.btn.button.show-title-form {
 }
 
 #wish td.wishlist-empty {
-    background: var(--color-accent);
+    background: var(--clr-accent);
     color: #fff;
     font-size: 15px;
     font-weight: 400;

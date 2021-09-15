@@ -173,7 +173,7 @@ body #et-main-area #main-content a.button.yith-wcqv-button:hover {
 #filtre-right-section ul.wpf_column_horizontal>li>input:checked:before,
 #filtre-left-section .wpf_item_pa_couleurs li input:hover:before,
 #filtre-left-section .wpf_item_pa_couleurs li input:checked:before {
-    border: 2px solid var(--color-accent)!important;
+    border: 2px solid var(--clr-accent)!important;
     border-radius: 50%;
 }
 
@@ -186,7 +186,7 @@ body #et-main-area #main-content a.button.yith-wcqv-button:hover {
 #filtre-right-section .wpf_color_icons:not(.wpf_hide_text) li>input:checked+label {
     border: none;
     font-weight: bold;
-    color: #26b2b8;
+    color: var(--clr-accent);
 }
 
 .filtre-toggle {
@@ -200,7 +200,7 @@ body #et-main-area #main-content a.button.yith-wcqv-button:hover {
 }
 
 .filtre-toggle:hover {
-    color: var(--color-accent);
+    color: var(--clr-accent);
 }
 
 .filtre-toggle:before {
@@ -229,7 +229,7 @@ footer.et-l.et-l--footer.lower-index {
 .woocommerce .woocommerce-error,
 .woocommerce .woocommerce-info,
 .woocommerce .woocommerce-message {
-    background: #26b2b8;
+    background: var(--clr-accent);
 }
 
 
