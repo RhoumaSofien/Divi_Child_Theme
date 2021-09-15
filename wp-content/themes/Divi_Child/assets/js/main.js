@@ -116,8 +116,6 @@ jQuery(document).ready(function($) {
 
 });
 
-
-
 jQuery(document).ajaxComplete(function(event, request, settings) {
     if (!jQuery('iframe.et-core-frame', window.parent.document).length) {
         // Rearrange wishlist & viewbutton place in HTML When Ajax change with Check!
@@ -137,6 +135,6 @@ jQuery(document).ajaxComplete(function(event, request, settings) {
 });
 
 
-jQuery(window).resize(function() {
+jQuery(window).resize(function($) {
     if (!jQuery('iframe.et-core-frame', window.parent.document).length) {}
 });
