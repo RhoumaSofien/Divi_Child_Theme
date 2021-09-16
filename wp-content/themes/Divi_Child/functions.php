@@ -33,6 +33,7 @@ function iconic_cart_count_fragments( $fragments ) {
     $fragments['.counter'] = ' <span class="counter">' . WC()->cart->get_cart_contents_count() . '</span>';
     return $fragments;
 }
+
 add_filter( 'woocommerce_add_to_cart_fragments', 'iconic_cart_count_fragments', 10, 1 );
 
 // Add "Add to Cart" buttons in Divi shop pages
